@@ -30,7 +30,6 @@ int main (int argc, char *argv[]){
 	           b = pop (); 
 	           a = pop (); 
                printf ("%.4f", a * b); 
-               getch();
                break; 
              default: 
                printf ("error"); 
