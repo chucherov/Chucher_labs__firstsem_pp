@@ -15,19 +15,16 @@ int main (int argc, char *argv[]){
    switch (c){ 
              case '+': 
                printf ("%.4f", pop()+pop()); 
-               getch();
                break; 
              case '-': 
                a = pop (); 
                b = pop (); 
                printf ("%.4f", b - a); 
-               getch();
                break; 
              case '/': 
                a = pop (); 
                b = pop (); 
                printf ("%.4f", b / a); 
-               getch();
                break; 
              case '*': 
 	           b = pop (); 
@@ -37,7 +34,6 @@ int main (int argc, char *argv[]){
                break; 
              default: 
                printf ("error"); 
-               getch();
              break; 
              } 
        return 0; 
