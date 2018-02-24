@@ -53,7 +53,7 @@ int check_century(int y){
    int res = (check_century(y) + last_two_numbers + (last_two_numbers/4)) % 7; 
    return res; 
    }
-   int main(void) { 
+   int main() { 
    int day, month, year;
    int ans;
    scanf("%d",&day); 
@@ -67,7 +67,6 @@ int check_century(int y){
    if(ans == 4) printf("%s", "Wednesday"); 
    if(ans == 5) printf("%s", "Thursday"); 
    if(ans == 6) printf("%s", "Friday"); 
-   getch();
    return 0; 
 } 
 
