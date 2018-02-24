@@ -24,7 +24,7 @@ int check_empty() {
    } 
 } 
  
-void push(int n) { 
+float push(int n) { 
       if (check_full() == 1) { 
       return; 
       } 
@@ -33,7 +33,7 @@ void push(int n) {
    return; 
    } 
  
-void pop() { 
+float pop() { 
      if (check_empty() == 1){ 
      return; 
      } 
@@ -66,6 +66,5 @@ int main(){
  pop(); /*Delete three elements*/
  printf("Top element = %d\n", top()); /*Top element is 0*/
  printf("Size = %d\n", size()); /*Size is 0*/
- getch();
  return 0; 
 }
