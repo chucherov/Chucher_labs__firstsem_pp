@@ -2,7 +2,6 @@
 int main(int argc, char *argv[]) { 
    float temp; 
    char m; 
-   temp = atoi (argv[0]); 
    printf("Enter you temperature\n"); 
    scanf("%f %c", &temp,&m); 
   switch (m) 
@@ -33,6 +32,5 @@ int main(int argc, char *argv[]) {
                  break;
                  default: printf("eror, try again"); 
                  } 
-        getch();
         return 0; 
 }
