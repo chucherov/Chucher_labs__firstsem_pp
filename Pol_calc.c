@@ -2,7 +2,7 @@
 #include <stdlib.h> 
 float mass [100]; 
 int counter = 0; 
-void push (float i); 
+float push (float i); 
 float pop (); 
 int main (int argc, char *argv[]){ 
    float p, a, b; 
@@ -37,7 +37,7 @@ int main (int argc, char *argv[]){
              } 
        return 0; 
        } 
- void push (float i){ 
+ float push (float i){ 
  if (counter <= 100){ 
  mass [counter] = i; 
  counter++; 
