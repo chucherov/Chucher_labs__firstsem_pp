@@ -2,24 +2,24 @@
 #include <stdlib.h> 
 float mass [100]; 
 int counter = 0; 
-float push (float i); 
+void push (float i); 
 float pop (); 
-int main (int argc, char *argv[]){ 
+int main (int argc, char * argv[]){ 
    float p, a, b; 
    char c;
-   scanf("%f %f %c", &a,&b,&c); 
-   p = a; 
+   
+   p = atof(argv[1]);
    push (p); 
-   p = b; 
-   push (p); 
-   switch (c){ 
+   p = atof(argv[2]); 
+   push (p);
+   switch (* argv[3]){ 
              case '+': 
                printf ("%.4f", pop()+pop()); 
                break; 
              case '-': 
                a = pop (); 
                b = pop (); 
-               printf ("%.4f", b - a); 
+               printf ("%.4f", b - a);
                break; 
              case '/': 
                a = pop (); 
@@ -29,15 +29,15 @@ int main (int argc, char *argv[]){
              case '*': 
 	           b = pop (); 
 	           a = pop (); 
-               printf ("%.4f", a * b); 
+               printf ("%.4f", a * b);
                break; 
              default: 
-               printf ("error"); 
+               printf ("Error"); 
              break; 
              } 
        return 0; 
        } 
- float push (float i){ 
+ void push (float i){ 
  if (counter <= 100){ 
  mass [counter] = i; 
  counter++; 
@@ -48,3 +48,4 @@ int main (int argc, char *argv[]){
  counter--; 
  return mass [counter]; 
 }
+
