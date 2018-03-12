@@ -7,17 +7,17 @@ int code_month(int m);
 int code_year(int y); 
  
 int check_century(int y){ 
-   int ftn = y / 100; 
-   if(ftn % 4 == 0){ 
+   int first_two_numbers = y / 100; 
+   if(first_two_numbers % 4 == 0){ 
      return 6; 
    } 
-   if(ftn % 4 == 1){ 
+   if(first_two_numbers % 4 == 1){ 
      return 4; 
    } 
-   if(ftn % 4 == 2){ 
+   if(first_two_numbers % 4 == 2){ 
      return 2; 
    } 
-   if(ftn % 4 == 3){ 
+   if(first_two_numbers % 4 == 3){ 
      return 0; 
    } 
      return 0; 
@@ -53,7 +53,7 @@ int check_century(int y){
    int res = (check_century(y) + last_two_numbers + (last_two_numbers/4)) % 7; 
    return res; 
    }
-   int main() { 
+   int main(void) { 
    int day, month, year;
    int ans;
    scanf("%d",&day); 
@@ -69,4 +69,6 @@ int check_century(int y){
    if(ans == 6) printf("%s", "Friday"); 
    return 0; 
 } 
+
+
 
