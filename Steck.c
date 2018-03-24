@@ -26,16 +26,16 @@ int check_empty() {
  
 float push(int n) { 
     if (check_full() == 1) { 
-        return; 
+        return 0; 
  } 
     my_stack[count] = n; 
     count++; 
-    return; 
+    return 0; 
 } 
  
 float pop() { 
     if (check_empty() == 1){ 
-        return; 
+        return 0; 
  } 
     my_stack[count - 1] = 0; 
     count--; 
