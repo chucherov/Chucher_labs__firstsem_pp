@@ -38,7 +38,8 @@ float pop() {
         return 0; 
  } 
     my_stack[count - 1] = 0; 
-    count--; 
+    count--;
+    return 0;
 } 
  
 int top() { 
