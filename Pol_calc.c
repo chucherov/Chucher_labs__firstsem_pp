@@ -6,7 +6,6 @@ void push (float i);
 float pop (); 
 int main (int argc, char * argv[]){ 
    float p, a, b; 
-   char c;
    
    p = atof(argv[1]);
    push (p); 
